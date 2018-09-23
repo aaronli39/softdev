@@ -1,3 +1,10 @@
+'''
+Aaron-gu-tang: Xiaojie(Aaron) Li & Michelle Tang
+SoftDev1 pd6
+K10 -- Jinja Tuning
+2018-09-23
+'''
+
 # import flask
 from flask import Flask, render_template
 # import uniform from random to generate random floats
@@ -11,7 +18,7 @@ app = Flask(__name__)
 csvDict = {} # dictionary with percentages as keys
 dict = {} # REAL dictionary with occupation as keys
 keys = [] # stores REAL dictionary keys
-list = [] # list to store a list of percentages(this is for the weighted random function)
+list = [] # list to store percentages(this is for the weighted random function)
 rows = 0 # how many rows of csv files
 
 
@@ -49,19 +56,18 @@ def weight(list):
         temp += i
         if temp >= rand:
             return(csvDict[list[index]])
-            break
         else: # otherwise increase the index to the next-to-smallest percentage
             index += 1
 
+# route 1: homepage
 @app.route("/")
 def welcome():
     return render_template('home.html')
 
 
-# route 1: homepage
+# route 2: occupations page
 @app.route("/occupations")
 def herro():
-
     return render_template('occupations.html',
                                name = "Occupations Data",
                                occu = weight(list),
