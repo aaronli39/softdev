@@ -67,7 +67,7 @@ def welcome():
 
 # route 2: occupations page
 @app.route("/occupations")
-def herro():
+def occupations():
     return render_template('occupations.html',
                                name = "Occupations Data",
                                occu = weight(list),
