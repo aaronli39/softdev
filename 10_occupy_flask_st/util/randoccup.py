@@ -18,7 +18,7 @@ rows = 0 # how many rows of csv files
 
 
 # with statement means less errors(automatically closes file)
-with open("data/occupations.csv","r") as csvF:
+with open("../data/occupations.csv","r") as csvF:
     csvR = csv.reader(csvF) # reads the csv file
     # iterate through the csv file
     for line in csvR:
