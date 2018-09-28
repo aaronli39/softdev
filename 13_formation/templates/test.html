@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+
+    .center {
+        text-align: center;
+    }
+    body {
+        font-family: sans-serif, arial;
+    }
+
+    input[type=submit] {
+        width: 10%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: #d3dae5;
+        border: none;
+        cursor: pointer;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1 class = "center">Welcome, Enter Your Username To Continue </h1>
+    <form action = "/greetings" method = "POST">
+        <div class="center">
+            <br>
+            <p>Username: <input type = "text" name = "user" placeholder = "enter your username" required></p><br>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

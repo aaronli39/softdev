@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greetings!</title>
+    <style>
+
+    body {
+        font-family: sans-serif, arial;
+    }
+
+    input[type=submit] {
+        width: 10%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: #d3dae5;
+        border: none;
+        cursor: pointer;
+    }
+
+    pre {
+        text-align: center;
+        font-size: 1vw;
+    }
+    .center {
+        text-align: center;
+    }
+
+    .greet {
+        font-family: fantasy;
+        font-style: : italic;
+        font-size: 2em;
+    }
+
+    .fixed {
+        margin-left: auto;
+        margin-right: 7.7%;
+    }
+    </style>
+</head>
+<body>
+    <h1 class = "center">Login Info and Your Greeting</h1>
+    <br>
+    <p class="center">Username Entered: <b>{{ name }}</b> </p>
+    <p class="center">Method Used: <b>{{ method }}</b> </p>
+    <p class="greet center">Greetings <u>{{ name }}</u>, it'S nICe tO mEeT yOU! HerE's a CUTe pUpPeR:</p>
+    <pre>
+        <div class = "fixed">
+            ,-.___,-.
+            \_/_ _\_/
+            )O_O(
+            { (_) }
+            `-^-'
+        </div>
+    </pre>
+
+    <center>
+        <form action = "/">
+            <input type = "submit" value = "Return Home">
+        </form>
+    </center>
+
+</body>
+</html>
