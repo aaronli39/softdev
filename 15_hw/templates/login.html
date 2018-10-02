@@ -1,0 +1,26 @@
+<!--
+I Like Cookies: Xiaojie(Aaron) Li, Angela Tom
+SoftDev1 pd6
+K14 -- Do I Know You?
+2018-10-01 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <h1>Welcome, Please Log In!</h1>
+  {% set msgs = get_flashed_messages() %}
+  {% for each in msgs %}
+  {{each}}
+  {% endfor %}
+  
+    <form action="/" method="POST">
+        <p>Username: <input type="text" name="username" required></p>
+        <p>Password: <input type="password" name="password" required></p>
+        <p><input type="submit" value="Log In"></p>
+    </form>
+</body>
+</html>
