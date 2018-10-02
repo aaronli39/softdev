@@ -1,5 +1,5 @@
 '''
-Xiaojie(Aaron) Li
+I Like Cookies: Xiaojie(Aaron) Li, Angela Tom
 SoftDev1 pd6
 K14 -- Do I Know You?
 2018-10-01
