@@ -9,10 +9,13 @@ K15 -- Oh Yes Perhaps I Do...
 <html>
 <head>
     <title>Hello There!</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <!-- greeting -->
     <h1>Greetings <i>{{ username }}</i>, You are Logged In!</h1>
+
+    <!-- logout form -->
     <form action="/drop">
         <p><input type="submit" value="Logout"></p>
     </form>
