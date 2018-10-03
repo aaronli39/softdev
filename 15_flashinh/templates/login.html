@@ -5,13 +5,15 @@ K15 -- Oh Yes Perhaps I Do...
 2018-10-02
 -->
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
+<!-- inherit base.html -->
+{% extends "base.html" %}
+    <!-- change title  -->
+    {% block title %}
+    Login
+	{% endblock %}
+
+    <!-- change content -->
+	{% block content %}
     <h1>Welcome, Please Log In!</h1>
     <br>
 
@@ -27,10 +29,4 @@ K15 -- Oh Yes Perhaps I Do...
         <p class="collapse"><input type="password" name="password" placeholder="Password" required></p><br>
         <p><input type="submit" value="Log In"></p>
     </form>
-</body>
-
-<!-- footer -->
-<footer>
-    &copy; I Like Cookies 2018
-</footer>
-</html>
+    {% endblock %}

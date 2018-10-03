@@ -5,13 +5,16 @@ K15 -- Oh Yes Perhaps I Do...
 2018-10-02
 -->
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hello There!</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
+<!-- inherit base.html -->
+{% extends "base.html" %}
+	<!-- change title -->
+	{% block title %}
+    Hello There!
+	{% endblock %}
+
+	<!-- change contents -->
+	{% block content %}
+
     <!-- greeting -->
     <h1>Greetings <i>{{ username }}</i>, You are Logged In!</h1>
 
@@ -19,10 +22,4 @@ K15 -- Oh Yes Perhaps I Do...
     <form action="/drop">
         <p><input type="submit" value="Logout"></p>
     </form>
-</body>
-
-<!-- footer -->
-<footer>
-    &copy; I Like Cookies 2018
-</footer>
-</html>
+    {% endblock %}

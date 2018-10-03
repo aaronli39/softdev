@@ -1,0 +1,34 @@
+<!--
+I Like Cookies: Xiaojie(Aaron) Li, Angela Tom
+SoftDev1 pd6
+K15 -- Oh Yes Perhaps I Do...
+2018-10-02
+-->
+
+<!-- template for the login and welcome screen -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- head -->
+    {% block head %}
+    <!-- title -->
+    <title> {% block title %} {% endblock %} </title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    {% endblock %}
+    
+</head>
+<body>
+    <!-- body -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- footer -->
+    {% block footer %}
+    <footer>
+        &copy; I Like Cookies 2018
+    </footer>
+    {% endblock %}
+
+</body>
+</html>
