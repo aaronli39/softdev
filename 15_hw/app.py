@@ -1,12 +1,12 @@
 '''
 I Like Cookies: Xiaojie(Aaron) Li, Angela Tom
 SoftDev1 pd6
-K14 -- Do I Know You?
-2018-10-01
+K15 -- Oh Yes Perhaps I Do...
+2018-10-02
 '''
 
 # import all the stuffs
-from flask import Flask, render_template, request, url_for, session, redirect
+from flask import Flask, render_template, request, url_for, session, redirect, flash
 import os
 
 # instantiate flask app
@@ -17,41 +17,29 @@ app.secret_key = os.urandom(32)
 # first route is index
 @app.route("/", methods = ["POST", "GET"])
 def index() :
-    print(app.secret_key)
-    print(request.method)
+    # when submit button is clicked:
     if request.method == "POST":
+        # if login is wrong, flash an error with message
         if request.form["username"] != "c00lman" or request.form["password"] != "c00lpass":
-            flash("Wrong password or username, try again")
-            redirect(url_for("index"))
-        else:
-            return render_template("welcome.html")
-    # if user is logged in session, show welcome page with greeting
-    if "username" in session:
-        return render_template("welcome.html", username = session["username"])
-    else:
-        # otherwise show log in page
+            if request.form["username"] != "c00lman":
+                problem = "username"
+            else:
+                problem = "password"
+            flash("Wrong " + problem + ", try again!")
+            return redirect(url_for("index"))
+        else: # if login was correct, redirect to welcome page
+            session["username"] = "c00lman"
+            return redirect(url_for("index"))
+    else: # if submit button wasn't clicked:
+        if "username" in session: # if user is logged in, return welcome page, else login page
+            return render_template("welcome.html", username = session["username"])
         return render_template("login.html")
 
-# second route is for handling log in request
-@app.route("/login", methods = ["GET", "POST"])
-def login():
-    # if username and password are correct, redirect to welcome page in index
-    if request.method == "POST" and request.form["username"] == "c00lman" and request.form["password"] == "c00lpass":
-        session["username"] = "c00lman"
-        return redirect(url_for("index"))
-    else:
-        # otherwise, return error page with error
-        if request.form["username"] != "c00lman":
-            problem = "username"
-        else:
-            problem = "password"
-        return render_template("login.html")
-
-# third route handles logging out, just drop the session
+# second route handles logging out, just drop the session
 @app.route("/drop")
 def logout():
     session.pop("username", None)
-    # redirect to log in page in index
+    # redirect to appropriate page in index
     return redirect(url_for("index"))
 
 # run flask

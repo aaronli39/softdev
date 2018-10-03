@@ -1,8 +1,17 @@
 body {
     font-family: sans-serif;
 }
+p.collapse {
+    margin-bottom: 0px;
+    margin-top: 1px;
+}
 
-h1, p {
+p.error {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: red;
+}
+h1, h2, p {
     text-align: center;
 }
 

@@ -8,18 +8,22 @@ K14 -- Do I Know You?
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1>Welcome, Please Log In!</h1>
-  {% set msgs = get_flashed_messages() %}
-  {% for each in msgs %}
-  {{each}}
-  {% endfor %}
-  
+    <h1>Welcome, Please Log In!</h1>
+    <br>
+
+    <!-- error message -->
+    {% set msgs = get_flashed_messages() %}
+    {% for each in msgs %}
+    <p class="error"> {{ each }} </p>
+    {% endfor %}
+
+    <!-- form -->
     <form action="/" method="POST">
-        <p>Username: <input type="text" name="username" required></p>
-        <p>Password: <input type="password" name="password" required></p>
+        <p class="collapse"><input type="text" name="username" placeholder="Username" required></p>
+        <p class="collapse"><input type="password" name="password" placeholder="Password" required></p><br>
         <p><input type="submit" value="Log In"></p>
     </form>
 </body>
