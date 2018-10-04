@@ -1,7 +1,7 @@
-#Clyde "Thluffy" Sinclair
-#SoftDev1 pd0
-#SQLITE3 BASICS
-#2018-10-04
+# Team DhataBhases: Xiaojie(Aaron) Li, Sophia Xia
+# SoftDev1 pd8
+# K16 -- No Trouble
+# 2018-10-04
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitates CSV I/O
