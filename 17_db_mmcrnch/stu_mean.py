@@ -1,11 +1,10 @@
-# Team DhataBhases: Xiaojie(Aaron) Li, Sophia Xia
+# Team Sum over Num_Elements: Xiaojie(Aaron) Li, Stefan Tan
 # SoftDev1 pd8
-# K16 -- No Trouble
-# 2018-10-04
+# K17 -- Average
+# 2018-10-06
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitates CSV I/O
-
 
 DB_FILE="discobandit.db"
 
