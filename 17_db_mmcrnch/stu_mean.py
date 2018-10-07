@@ -55,26 +55,28 @@ CREATE TABLE averages(
     oasis INTEGER,
     average REAL)
 """
-c.execute(command)    #run SQL statement
+# get each student's name, id, and grade
+c.execute(command)
 command = """
 SELECT name, students.id, mark FROM students, courses
 WHERE students.id = courses.id
 """
 c.execute(command)
-avg = c.fetchall()
-print(avg)
-current = avg[0][0]
-sum = 0
-count = 0
-for i in avg:
-    if i[0] == current:
-        sum += i[2]
+avg = c.fetchall() # get all student info
+# print(avg)
+current = avg[0][0] # current student
+sum = 0 # sum thus far
+count = 0 # count
+for i in range(len(avg)):
+    if avg[i][0] == current:
+        sum += float(avg[i][2])
         count += 1
     else:
-        print("sum: " + str(sum))
-        print(str(sum/count) + " " + i[0])
-        current = i[0]
-        sum = i[2]
+        # print(str(sum/count) + " " + avg[i - 1][0])
+        command = (avg[i - 1][0], avg[i - 1][1], avg[i - 1][2])
+        c.execute("INSERT INTO averages VALUES(?, ?, ?)", command)
+        current = avg[i][0]
+        sum = float(avg[i][2])
         count = 1
 #==========================================================
 
