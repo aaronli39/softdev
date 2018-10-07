@@ -52,7 +52,7 @@ with open("courses.csv") as csvfile:
 command = """
 CREATE TABLE averages(
     name TEXT,
-    oasis INTEGER,
+    id INTEGER,
     average REAL)
 """
 # get each student's name, id, and grade
@@ -79,6 +79,13 @@ for i in range(len(avg)):
         sum = float(avg[i][2])
         count = 1
 #==========================================================
+# function to add rows to courses table
+def add(code, mark, id):
+    commands = (code, mark, id)
+    c.execute("INSERT INTO courses VALUES(?, ?, ?)", commands)
 
+# add a few courses to test
+add("Poetry", 68, 3)
+add("Great Books", 89, 5)
 db.commit() #save changes
 db.close()  #close database
