@@ -1,5 +1,5 @@
 # Team Sum over Num_Elements: Xiaojie(Aaron) Li, Stefan Tan
-# SoftDev1 pd8
+# SoftDev1 pd6
 # K17 -- Average
 # 2018-10-06
 
@@ -15,6 +15,7 @@ c = db.cursor()               #facilitate db ops
 # build SQL stmt, save as string
 command = """
 CREATE TABLE students(
+    counter INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
     age INTEGER,
     id INTEGER)
@@ -33,6 +34,7 @@ with open("peeps.csv") as csvfile:
 # create courses table
 command = """
 CREATE TABLE courses(
+    counter INTEGER PRIMARY KEY AUTOINCREMENT,
     code TEXT,
     mark INTEGER,
     id INTEGER)
@@ -50,6 +52,7 @@ with open("courses.csv") as csvfile:
 # create average table
 command = """
 CREATE TABLE averages(
+    counter INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
     id INTEGER,
     average REAL)
@@ -67,21 +70,27 @@ current = avg[0][0] # current student
 sum = 0 # sum thus far
 count = 0 # count
 for i in range(len(avg)):
+    # print(avg[i][0])
     if avg[i][0] == current:
         sum += float(avg[i][2])
         count += 1
     else:
-        # print(str(sum/count) + " " + avg[i - 1][0])
+        print(str(sum/count) + " " + avg[i - 1][0])
         command = (avg[i - 1][0], avg[i - 1][1], avg[i - 1][2])
-        c.execute("INSERT INTO averages VALUES(?, ?, ?)", command)
+        c.execute("INSERT INTO averages(name, id, average) VALUES(?, ?, ?)", command)
         current = avg[i][0]
+        # print("current: " + current)
         sum = float(avg[i][2])
         count = 1
+# print and add last student value
+print(str(sum/count) + " " + avg[i - 1][0])
+command = (avg[i - 1][0], avg[i - 1][1], avg[i - 1][2])
+c.execute("INSERT INTO averages(name, id, average) VALUES(?, ?, ?)", command)
 #==========================================================
 # function to add rows to courses table
 def add(code, mark, id):
     commands = (code, mark, id)
-    c.execute("INSERT INTO courses VALUES(?, ?, ?)", commands)
+    c.execute("INSERT INTO courses(code, mark, id) VALUES(?, ?, ?)", commands)
 
 # add a few courses to test
 add("Poetry", 68, 3)
