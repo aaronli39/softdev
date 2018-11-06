@@ -38,3 +38,7 @@ pre {
     margin-bottom: 0px;
     border
 }
+
+.heavy {
+    font-weight: 600;
+}
