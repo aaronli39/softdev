@@ -23,3 +23,18 @@
 #intro {
     border-bottom: 0px;
 }
+
+code {
+    display: block;
+    overflow: auto;
+}
+
+pre {
+    display: block;
+    width: 100%;
+    margin-top: 0px;
+}
+#text1 {
+    margin-bottom: 0px;
+    border
+}

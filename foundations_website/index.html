@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+    <!-- nav bar -->
     <div class="top-bar is-anchored is-at-top">
         <div class="top-bar-left">
             <ul class="menu">
@@ -23,26 +24,126 @@
             </ul>
         </div>
     </div>
+
+    <!-- intro -->
     <div class="callout large" id="intro">
         <div class="text-center">
             <h1>Welcome to the Zurb Foundations Web-Framework Introduction</h1>
         </div>
     </div>
-    <hr>
+
     <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <h3>Foundation's XY-Grid System</h3>
-            <div class="callout">
-                <div class="text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident id dignissimos laborum nemo deserunt impedit molestiae, quae autem! Eaque, expedita sequi minus hic fugit tempora doloribus praesentium facere voluptates autem error! Totam pariatur quisquam asperiores numquam odit omnis. Asperiores laboriosam dignissimos dolorem ea corporis reprehenderit saepe totam, sequi. Provident vitae impedit aspernatur soluta, quisquam rem facilis obcaecati assumenda placeat culpa odio maiores animi atque debitis quaerat. Voluptatibus similique ratione quia vero temporibus sunt placeat provident cupiditate rem dicta harum asperiores porro deleniti praesentium, nihil itaque illum, fugit. Voluptates eum recusandae quasi dolorum, quos eius quaerat corporis officia, molestias et laboriosam.
+        <hr>
+
+        <!-- callout demo -->
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+                <div class="large-12 medium-12 small-12 text-center">
+                    <div class="callout primary">
+                        <h2>This is a primary callout</h2>
+                    </div>
+                </div>
+                <div class="large-12 medium-12 small-12 text-center">
+                    <div class="callout success">
+                        <h2>Here's a success callout</h2>
+                    </div>
+                </div>
+                <div class="large-12 medium-12 small-12 text-center">
+                    <div class="callout warning">
+                        <h2>Warning callout</h2>
+                    </div>
+                </div>
+                <div class="large-12 medium-12 small-12 text-center">
+                    <div class="callout alert">
+                        <h2>An alert callout!</h2>
+                    </div>
+                    <hr>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+        <!-- grid demo -->
+
+        <!-- heading -->
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+                <h2>Foundation's XY-Grid Sizes are Large/Medium/Small</h2>
+                <h4>Here's what they look like:</h4>
+            </div>
+        </div>
+        <!-- grid -->
+        <div class="grid-x grid-padding-x">
+            <!-- large left side -->
+            <div class="large-8 medium-8 cell">
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-12 medium-12 cell">
+                        <div class="primary callout">
+                            <p><strong>This is a 12 cell "subsection" in a 8 cell parent.</strong> Each of following cells includes a callout element for visuals, but it's not required.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-6 medium-6 cell">
+                        <div class="warning callout">
+                            <p>This is a 6 cell within the 8 cell parent</p>
+                        </div>
+                    </div>
+                    <div class="large-6 medium-6 cell">
+                        <div class="warning callout">
+                            <p>Twin 6 cell, on the same grid-x</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-4 medium-4 small-4 cell">
+                        <div class="primary callout">
+                            <p>These are size 4 cells</p>
+                        </div>
+                    </div>
+                    <div class="large-4 medium-4 small-4 cell">
+                        <div class="primary callout">
+                            <p>all lined up on the same</p>
+                        </div>
+                    </div>
+                    <div class="large-4 medium-4 small-4 cell">
+                        <div class="primary callout">
+                            <p>grid-x (think of it like a row)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- <pre> <code>
+        &lt;div class="grid-x grid-margin-x">
+        &lt;div class="cell medium-6 large-4">12/6/4 cells&lt;/div>
+        &lt;div class="cell medium-6 large-8">12/6/8 cells&lt;/div>
+        &lt;/div>
+        &lt;div class="grid-x grid-padding-x">
+        &lt;div class="cell medium-6 large-4">12/6/4 cells&lt;/div>
+        &lt;div class="cell medium-6 large-8">12/6/8 cells&lt;/div>
+        &lt;/div>
+    </code>
+</pre> -->
+<!-- <div class="grid-x grid-margin-x">
+<div class="cell medium-6 large-4">12/6/4 cells</div>
+<div class="cell medium-6 large-8">12/6/8 cells</div>
+</div>
+<div class="grid-x grid-padding-x">
+<div class="cell medium-6 large-4">12/6/4 cells</div>
+<div class="cell medium-6 large-8">12/6/8 cells</div>
+</div>
+</div>
+</div> -->
+
+
+<!-- scripts -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
