@@ -2,18 +2,24 @@
 .top-bar {
     width: 100%;
     padding: 0px 0px;
-    position: fixed;
+    position: relative;
 }
 
 .top-bar ul {
-    background-color: #2C3840;
+    background-color: #bd6c02;
 }
 
 .menu a {
-    color: #fefefe;
+    color: white;
     padding: 1rem 1.5rem;
+    /* border-bottom: 2px solid white; */
 }
 
 .top-bar .menu a:hover {
-    background-color: #41525E;
+    /* border-bottom: 2px solid blue; */
+    background-color: #cd8f3d;
+}
+
+#intro {
+    border-bottom: 0px;
 }
