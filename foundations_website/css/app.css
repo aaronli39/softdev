@@ -32,10 +32,7 @@
 
 #intro {
     border-bottom: 0px;
-}
-
-.grid-x, .grid-padding-x {
-    background-color:#f5f4f4 ;
+    background-color: white;
 }
 
 code {
@@ -55,9 +52,4 @@ pre {
 
 .heavy {
     font-weight: 600;
-}
-
-.limited {
-    height: 25rem;
-    overflow: auto;
 }
