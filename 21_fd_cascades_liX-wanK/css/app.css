@@ -4,7 +4,7 @@
     min-height:100%;
     z-index:-999;
     background: url(images/leaves.jpg);
-    opacity: 0.75;
+    opacity: 0.8;
     margin:0;
     padding:0;
 }
@@ -35,22 +35,7 @@
 }
 
 .grid-x, .grid-padding-x {
-    background-color:#f5f4f4 ;
-}
-
-code {
-    display: block;
-    overflow: auto;
-}
-
-pre {
-    display: block;
-    width: 100%;
-    margin-top: 0px;
-}
-#text1 {
-    margin-bottom: 0px;
-    border
+    background-color: #e9e9e9;
 }
 
 .heavy {
@@ -60,4 +45,8 @@ pre {
 .limited {
     height: 25rem;
     overflow: auto;
+}
+
+kbd {
+    background-color: #9d9d9d;
 }
