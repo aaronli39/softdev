@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zurb Foundations</title>
     <link rel="stylesheet" href="css/foundation.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.css" type="text/css">
-    <link rel="stylesheet" href="css/app.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/app.css"> -->
 
     <!-- CUSTOM STYLES -->
     <style>
@@ -17,9 +19,30 @@
         min-height:100%;
         z-index:-999;
         background: url("https://previews.123rf.com/images/yuzach/yuzach1308/yuzach130800019/21743475-autumn-leaves-motif-color%C3%A9-sur-fond-pluies.jpg");
-        opacity: 0.8;
+        opacity: 0.82;
         margin:0;
         padding:0;
+    }
+
+    .fi-heart {
+        font-size: 18rem;
+        color: #ec341b;
+    }
+
+    .fi-social-facebook {
+        color: #284a85;
+    }
+
+    .fi-map {
+        color: #b3a078;
+    }
+
+    .fi-trees {
+        color: green;
+    }
+
+    .fi-lock {
+        color: #613e14;
     }
 
     .top-bar {
@@ -85,6 +108,7 @@
                     <li><a href="#cards">Style</a></li>
                     <li><a href="#forms">Forms</a></li>
                     <li><a href="#typo">Typography</a></li>
+                    <li><a href="#surprise">Surprise</a></li>
                 </ul>
             </div>
         </div>
@@ -351,15 +375,26 @@
                         <div class="grid-x grid-padding-x">
                             <br>
                             <div class="large-6 medium-6 cell">
-                                <label>Ooooh animated checkbox!</label>
-                                <div class="switch large">
-                                    <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+                                <label>Ooooh medium animated checkbox!</label>
+                                <div class="switch medium">
+                                    <input class="switch-input" id="yes-no" type="checkbox" name="check-switch">
                                     <label class="switch-paddle" for="yes-no">
-                                        <span class="show-for-sr">Did you like this page?</span>
                                         <span class="switch-active" aria-hidden="true">Yes</span>
                                         <span class="switch-inactive" aria-hidden="true">No</span>
                                     </label>
                                 </div>
+                            </div>
+                            <br>
+                            <div class="large-6 medium-6 cell">
+                                <label>Vote for our page?</label>
+                                <div class="switch large">
+                                    <input class="switch-input" id="mhm-nah" type="checkbox" name="vote-switch">
+                                    <label class="switch-paddle" for="mhm-nah">
+                                        <span class="switch-active" aria-hidden="true">Mhm</span>
+                                        <span class="switch-inactive" aria-hidden="true">Nah</span>
+                                    </label>
+                                </div>
+
                             </div>
                         </div>
                         <div class="grid-x grid-padding-x">
@@ -429,10 +464,47 @@
                     <span class="badge warning">Q</span>
                     <br><br>
                 </div>
+                <div class="large-12 cell">
+                    <h3>Hehe there some cool icons too:</h3>
+                    <div class="grid-x grid-padding-x">
+
+                        <div class="large-2 medium-2 small -4 text-center cell">
+                            <i class="fi-cloud"></i>
+                        </div>
+                        <div class="large-2 medium-2 small -4 text-center cell">
+                            <i class="fi-social-facebook"></i>
+                        </div>
+                        <div class="large-2 medium-2 small -4 text-center cell">
+                            <i class="fi-map"></i>
+                        </div>
+                        <div class="large-2 medium-2 small -4 text-center cell">
+                            <i class="fi-clock"></i>
+                        </div>
+                        <div class="large-2 medium-2 small -4 text-center cell">
+                            <i class="fi-trees"></i>
+                        </div>
+                        <div class="large-2 medium-2 small -4 text-center cell">
+                            <i class="fi-lock"></i>
+                        </div>
+                    </div>
+                    <br>
+                </div>
             </div>
             <br><br><br>
-
         </div>
+
+        <div class="grid-container" id="surprise">
+            <br><br>
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 text-center cell">
+                    <br>
+                    <h3><strong>Thank you for visting! This site was created through lots of</strong></h3>
+                    <i class="fi-heart"></i>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+        <br><br>
     </div>
 </body>
 </html>
