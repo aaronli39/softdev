@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from util import num
 import json, urllib.request, os
 
 # instantiate flask app
@@ -10,14 +11,20 @@ app.secret_key = os.urandom(32);
 # definte index route
 @app.route("/")
 def index():
-    with urllib.request.urlopen("https://api.nasa.gov/planetary/apod?api_key=fDt3yjMvHQXteTtvW2I68LVqNNJFXy2raPmyg7AX") as url:
+    # get a link with random date
+    link = num.main()
+
+    # try opening the url(because some dates might not work)
+    try:
+        url = urllib.request.urlopen(link)
         data = json.loads(url.read().decode())
-        print(data)
-    return render_template("index.html", img = data['url'])
-
-
-
-
+    except: # if error, use the definite function
+        link = num.definite()
+        data = json.loads(urllib.request.urlopen(link).read().decode())
+        temp = False
+    print(link)
+    print(data)
+    return render_template("index.html", date = data['date'], img = data["url"], explan = data["explanation"])
 
 # run flask
 if __name__ == "__main__":
