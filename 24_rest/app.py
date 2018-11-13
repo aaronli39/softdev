@@ -31,7 +31,7 @@ def index():
         temp = False
     print(link)
     print(data)
-    return render_template("index.html", date = data['date'], img = data["url"], explan = data["explanation"])
+    return render_template("index.html", date = data['date'], img = data["url"], explan = data["explanation"], title = data["title"])
 
 # run flask
 if __name__ == "__main__":
