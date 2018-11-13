@@ -2,15 +2,44 @@
 __   ___   ____ _____  ___   ____  _          _      ___  _____  ____  __
 ( (` / / \ | |_   | |  | | \ | |_  \ \  /     | |\ | / / \  | |  | |_  ( (`
 _)_) \_\_/ |_|    |_|  |_|_/ |_|__  \_\/      |_| \| \_\_/  |_|  |_|__ _)_)
-________________________________________________________________________________
+___________________________________________________________
 ___,                                _
 /   |                             \_|_)  o
 |    |   __,   ,_    __   _  _       |
 |    |  /  |  /  |  /  \_/ |/ |     _|    |
 \__/\_/\_/|_/   |_/\__/   |  |_/  (/\___/|_/
-________________________________________________________________________________
+___________________________________________________________
 ```
 
+#11/08/18
+
+**Aim:** REST up
+
+**API:** Application Program Interface
+
+* published set of protocols that can be used to have your program interact with some other program/service
+* examples:
+    * Python API (Documentation)
+    * Java API
+    * Netlogo DOcumentation API
+* not solely geared for programmers
+* when we wrote an info tab for netlogo project, that is kind of an API
+* declaring an interface in Java -> API
+*
+**REST:** **Re**presentative **S**tate **T**ransfer
+
+* a REST API transmits data back after receiving an http(s) request
+* returned data can be in various formats. Most common are HTML, XML, JSON
+* often require a **key**(why?)
+* we're gonna focus on JSON format
+* read up on **Wikipedia** representative state transfer
+
+**json** library facilitates ork with JSON data
+
+* ```.loads()``` turns a JSON object string into a dictionary
+* ```.dumps()``` turns python dict into JSON object string. EG: ```w = json.dumps(<DICTIONARY>)```
+
+-----
 
 11/07/18
 Task:
