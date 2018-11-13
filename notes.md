@@ -2,30 +2,35 @@
 __   ___   ____ _____  ___   ____  _          _      ___  _____  ____  __
 ( (` / / \ | |_   | |  | | \ | |_  \ \  /     | |\ | / / \  | |  | |_  ( (`
 _)_) \_\_/ |_|    |_|  |_|_/ |_|__  \_\/      |_| \| \_\_/  |_|  |_|__ _)_)
-________________________________________________________________________________
+____________________________________________________________________
+
 ___,                                _
 /   |                             \_|_)  o
 |    |   __,   ,_    __   _  _       |
 |    |  /  |  /  |  /  \_/ |/ |     _|    |
 \__/\_/\_/|_/   |_/\__/   |  |_/  (/\___/|_/
-________________________________________________________________________________
+____________________________________________________________________
+
 ```
 
+#11/07/18
 
-11/07/18
-Task:
+**Task**:
 
-Be prepared to show and tell when you are visited
+Be prepared to show and tell when you are visited:
 * 1 cool(CSS) thing your FEF can do
 
-11/05/18
-Aim: Bootstrap
+#11/05/18
+
+###Aim: Bootstrap
 
 Front-end frameworks:
--* foundation
--* Bootstrap
+
+* foundation
+* Bootstrap
 
 As a duo, look up either the bootstrap or foundation front end framework and:
+
 * research framework
 * create a single HTML page that demonstrates:
 * the key features of your framework
@@ -33,25 +38,28 @@ As a duo, look up either the bootstrap or foundation front end framework and:
 * highlight the most attractive or useful features of your framework
 * your page should provide a simpler on-ramp than the site
 
-11/02/18
-Cascading style sheets (css)
+#11/02/18
+###Cascading style sheets (css):
+
 * created to separate presentation of an HTML/XML Page from its contents
 * not limited to web pages(paper, etc)
-* though HTML tags like <center* exist, you should henceforth avoid them
+* though HTML tags like ```<center>``` exist, you should henceforth avoid them
 * 3 ways to style css:
 * inline
 * internal style sheet
 * external style sheets
 
 Basic syntax:
-* Property: value;
-Eg:
+* ```Property: value;```
+* EG:
+```
 color: light blue;
 border: 100px;
+```
 
 * Inline styling:
-* syntax: <TAG stle="CSS CODE"*
-eg: <p stle="color:green"*
+* syntax: ```<TAG stle="CSS CODE"```
+eg: ```<p style="color:green"```
 * add CSS code to the style attribute of HTML tag
 * good for trying things out
 * .... but tedious if we want all of them to look the same, its tedious to
@@ -61,24 +69,32 @@ retype them over and over
 * add a STYLE element to the section of the page
 * include all CSS code inside the <style ... </style* block
 * requires addition of a selector so that it is clear what element you are styling
-* SYNTAX:
+
+**SYNTAX:**
+```
 SELECTOR {
-CSS CODE;
+    CSS CODE;
 }
-eg:
+```
+**eg:**
+```
 h1 {
 color: #FF00FF; // this is purple(red + blue)
 }
+```
 
 * External Style Sheets
 * create a separate .css file that contains all of your CSS code
 * it cannot contain any other kind of code(no HTML or XML)
 * include a link to the CSS file inside the section of the HEAD section of your page
-* SYNTAX:
+
+**SYNTAX:**
 eg:
-<head*
-<link rel="stylesheet" href="STYLE FILE" type="text/css"*
-</head*
+```
+<head>
+    <link rel="stylesheet" href="STYLE FILE" type="text/css"*
+</head>
+```
 
 * GO GO WEB browser INSPECT!
 * right click and select inspect
@@ -89,32 +105,38 @@ eg:
 
 * Class attribute
 ... is an identifier that can be applied to multiple elements. Any HTML element can have this.
-eg:
-<div class="navbar"* ... </div*
-<h2 class="new_chapter"* ... </h2*
+**eg:**
+```
+<div class="navbar"> ... </div>
+<h2 class="new_chapter"> ... </h2>
+```
 
 To access these classes in your CSS file, put a period in front of the class name:
-eg:
+
+**eg:**
+```
 .new_chapter {
-text-align: center;
+    text-align: center;
 }
+```
+
 * ID Attributes
 HTML elements can also have an ID attribute(identifier to be applied ONLY TO A SINGLE ELEMENT)
-eg:
-<div id="main_content"* ... </div*
+**eg:** ```<div id="main_content"* ... </div>```
 To use a aselector in your CSS flies,
 put a #(octothorp) in front of the ID tag
-eg:
+**eg:**
+```
 #main_content {
-text-align: center;
+    text-align: center;
 }
+```
 
 * PROTIP:
 you can use ID Names in tags as href target to jump around the same pages
-eg:
-<a href="#main_content"*... </a*
+**eg:** ```<a href="#main_content">... </a>```
 
-* Task: bookmarg:
-developer.mozilla.org/en0US/docs/Web/CSS
+* Task: bookmark: [Mozilla](developer.mozilla.org/en0US/docs/Web/CSS)
+
 (google MDN CSS)
 ___________________________________________________________________________
