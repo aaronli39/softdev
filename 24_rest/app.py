@@ -5,9 +5,10 @@ K24 -- A RESTful Journey Skyward
 2018-11-13
 """
 
-from flask import Flask, render_template
-from util import num
 import json, urllib.request, os
+from flask import Flask, render_template
+
+from util import num
 
 # instantiate flask app
 app = Flask(__name__)

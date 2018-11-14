@@ -11,7 +11,26 @@ ___,                                _
 ___________________________________________________________
 ```
 
-#11/08/18
+-----
+
+# 11/14/18
+
+**Aim:** Get more REST
+
+```
+u = request.urlopen(URL)
+response = u.read()
+data = json.loads(response) # save JSON obj as dictionary
+return render_template("index.html", pic = data['url'])
+```
+
+**Why maintain API knowledge base?**
+* lowers/refines the scope of existing APIs to narrow down to things that actually matter
+
+
+-----
+
+# 11/13/18
 
 **Aim:** REST up
 
