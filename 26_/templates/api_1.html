@@ -11,9 +11,9 @@
     <title>World Population Info</title>
 
     <style>
-        u1 {
+        .overflow {
             width: 50%;
-            height: 50%;
+            height: 10rem;
             overflow: auto;
         }
 
@@ -26,19 +26,24 @@
         <!-- first row -->
         <div class="row">
 
-            <div class="col-sm text-center">
-                <h1>Here be countries data from the World Population API</h1>
-                <h2><small><a href="http://api.population.io/">Here be link</a></small></h2>
+            <div class="col-lg text-center">
+                <h1 class="mt-4">Here be countries data from the World Population API</h1>
+                <h2><small><a href="http://api.population.io/" target="_blank">Here be link</a></small></h2>
 
-                <u1>
-                    {% for country in {{ countries }} %}
-                    <li>{{ country }}</li>
-                </u1>
+                <p class="mt-3 overflow">
+                    <ul class="overflow">
+                        {% for country in countries %}
+                        <li>{{ country }}</li>
+                        <br>
+                        {% endfor %}
 
+                    </ul>
+
+                </p>
             </div>
-
-
         </div>
+
     </div>
+
 </body>
 </html>
