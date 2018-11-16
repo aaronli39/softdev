@@ -11,12 +11,11 @@
     <title>World Population Info</title>
 
     <style>
-        .overflow {
-            width: 50%;
-            height: 10rem;
-            overflow: auto;
-        }
-
+    .overflow {
+        width: 18rem;
+        height: 10rem;
+        overflow: auto;
+    }
     </style>
 </head>
 <body>
@@ -27,22 +26,29 @@
         <div class="row">
 
             <div class="col-lg text-center">
-                <h1 class="mt-4">Here be countries data from the World Population API</h1>
-                <h2><small><a href="http://api.population.io/" target="_blank">Here be link</a></small></h2>
-
-                <p class="mt-3 overflow">
-                    <ul class="overflow">
+                <h1 class="mt-4">Here be random quotes from FavQuotes</h1>
+                <h2><small><a href="https://favqs.com/api" target="_blank">Here be link to official API </a></small></h2>
+            </div>
+        </div>
+        <hr>
+        <!-- second row -->
+        <div class="row justify-content-center mt-2">
+            <div class="col-md-5 overflow">
+                    <ul>
                         {% for country in countries %}
                         <li>{{ country }}</li>
                         <br>
                         {% endfor %}
-
                     </ul>
-
-                </p>
+                </div>
+        </div>
+        <hr>
+        <!-- third row -->
+        <div class="row">
+            <div class="col text-center">
+                <a href="/" class="btn btn-info">Back to Home</a>
             </div>
         </div>
-
     </div>
 
 </body>
