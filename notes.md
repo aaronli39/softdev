@@ -1,21 +1,67 @@
 ```
-__   ___   ____ _____  ___   ____  _          _      ___  _____  ____  __
+ __   ___   ____ _____  ___   ____  _          _      ___  _____  ____  __
 ( (` / / \ | |_   | |  | | \ | |_  \ \  /     | |\ | / / \  | |  | |_  ( (`
 _)_) \_\_/ |_|    |_|  |_|_/ |_|__  \_\/      |_| \| \_\_/  |_|  |_|__ _)_)
 ___________________________________________________________
-___,                                _
+ ___,                                _
 /   |                             \_|_)  o
 |    |   __,   ,_    __   _  _       |
 |    |  /  |  /  |  /  \_/ |/ |     _|    |
-\__/\_/\_/|_/   |_/\__/   |  |_/  (/\___/|_/
+ \__/\_/\_/|_/   |_/\__/   |  |_/  (/\___/|_/
 ___________________________________________________________
 ```
 
 -----
 
+# 12/14/18
+
+**Aim**: What happened in the 1990s?
+
+**DN**: Scheme definition of fact(n)?
+
+* windows 3/0
+* macintosh system 6(if u were cool)
+* CERN: neXT machine(first heavy duty machine that scentists worked on)(collider)
+* TB-L writes **worldwideweb**, first graphical web browser(WYSIWYG html editor)
+* LaTeX - a markdown language
+
+**1991**:
+
+* Gore Bill passes. Why do we care?
+* ```lynx```: a terminal www browser
+    * oldest browser still in use.
+    * faaaaaaaaaaaaaast(cus no images/ stuff)
+    * malware impervious
+    * allows cookies nowadays
+
+**Java**:
+
+* Java is in vogue
+* **mosaic(UIUC)**: first mainstream graphical web browser bc:
+    * windows port
+    * supports multiple internet protocols(hence name)
+        * FTP
+        * Gopher
+        * HTTP
+        * etc
+    * runs on windows instead of only on NeXT
+    * images in line with text(instead of separate windows)
+
+**1994, a super cool nerds window**
+
+* slipknot web browser
+* MOSAIC COmmunications founded in Mtn View
+    * mosaic netscape offers similar UX as Mosaic
+    * same team
+    * different src
+    * a16z?
+* Mozilla is born!(internal codename: MOZaic kILLa)
+
+-----
+
 # 11/16/18
 
-**Aim**: 
+**Aim**:
 
 -----
 
