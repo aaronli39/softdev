@@ -13,6 +13,77 @@ ___________________________________________________________
 
 -----
 
+# 12/17/18
+
+**Aim:**: 90s BS - JS
+
+**1995**: @NETSCAPE Communicatins
+* Brendan Eich writes prototype of JS in 10 days
+* the internet in the early days was a collection of hyperlinks
+* JS created b/c the internet was in need of a scripting language
+* scheme is a very robust language!
+* the web is using heavily more functional programming languages
+
+**BIG IDEA: Scheme + Java -> Javascript**
+* lets give scheme the *syntax of Java* and mooch of Java's populatiry by calling this javascript
+* **JS is not a light version of Java**, and has **no resemblance to Java**
+
+**90's browser wars: IE vs Netscape**:
+* Microsoft tried to dominate by packaging each Windows machine with a browser, as opposed to NetScape b/c one had to install it
+* **1996:** VBscript/Jscript were MS's attempted implementations
+* development was not uniform for IE vs other browsers(NETSCAPE)
+* JS was *slow*
+
+**Darci DiNucci(1999)**:
+* had a vision of **Web 2.0**, which resembles today's internet.
+* it will appear on your screen as a page of interactivity
+
+**2005: JS goes mainstream**:
+* advent of web 2.0(2 way comm)
+* **Jesse James Garett**: wrote guides on JS-driven page updates w/o reload("asyncrhnous")
+
+**JS features**:
+* dynamic typing
+* first-class fxns
+    * can be treated like vars(pass, returned)
+    * you can give a function a name and then pass around that function by name
+* object-oriented(if you'd like, or an imperative lang)
+* functional
+
+*JS limitations*
+* no I/O(networking, storage, graphics)
+
+*JS syntax*:
+* from C(like Java, Python, C++, etc)
+* auto-semicolon-ination!(browser will assume and assert)
+
+Best practices(**AVOID**):
+```js
+function fxnName(args) {
+    body;
+}
+```
+Instead **take advantage of first class fxns**, DO:
+```js
+var fxnName = function(args) {
+    body;
+};
+
+// or
+
+var fxnName = (args) => {
+    body;
+};
+```
+
+* easier to understand "fxn as obj"
+    * can be reassigned
+    * can be passed as an args
+    * "lambda" <=> "function"
+* enforces better semicolon habits
+
+-----
+
 # 12/14/18
 
 **Aim**: What happened in the 1990s?
