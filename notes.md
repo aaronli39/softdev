@@ -13,6 +13,24 @@ ___________________________________________________________
 
 -----
 
+# 12/18/18
+
+**Aim:** Where does JS live?
+
+**Environment**:
+* browser
+* browser console
+* document object model
+
+**DOM**:
+* tree representatino of a webpage
+* generators avail online: [link](goo.gl/BCcd7f)
+* visualization
+* named components
+* use ```<script>``` tag to load JS at end
+    * you can link your script tag in the *beginning* of a file to make sure it is loaded but then you might not always want this since some DOM objects might still not be loaded/aware of yet since the rest of the page has not loaded yet
+-----
+
 # 12/17/18
 
 **Aim:**: 90s BS - JS
