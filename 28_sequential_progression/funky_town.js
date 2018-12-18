@@ -1,4 +1,4 @@
-var studentList = ["ricky", "aaron", "kyle", "kaitlin", "tim", "bo"];
+var studentList = ["ricky", "aaron", "kyle", "kaitlin", "tim", "bo", "damian", "michelle"];
 
 var fib = function(args) {
     if (args == 0) return 0;
