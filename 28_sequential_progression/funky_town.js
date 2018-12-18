@@ -16,18 +16,18 @@ var gcd = function(num, denom) {
 var randStudent = function() {
     var len = studentList.length;
     var rand = Math.floor(Math.random() * len);
-    //console.log(rand);
+    // console.log(rand);
     return studentList[rand];
 }
 
 console.log("fib ------")
-console.log(fib(1));
-console.log(fib(8));
-console.log(fib(4));
+console.log("fib(1): " + fib(1));
+console.log("fib(8): " + fib(8));
+console.log("fib(4): " + fib(4));
 console.log("gcd ------")
-console.log(gcd(8, 10));
-console.log(gcd(10, 100));
-console.log(gcd(100, 10));
+console.log("gcd(8, 10): " + gcd(8, 10));
+console.log("gcd(10, 100): " + gcd(10, 100));
+console.log("gcd(100, 10): " + gcd(100, 10));
 console.log("randomStudent ------")
 console.log(randStudent());
 console.log(randStudent());
