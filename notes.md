@@ -11,6 +11,46 @@ ___________________________________________________________
 ___________________________________________________________
 ```
 
+# 12/19/18
+
+**Aim**: JS 2: Electric Boogaloo
+* advent of webdev: *softdev*
+    * this is because the browser rose as an "operating system" in which u do and interact with
+
+**JS**:
+* originally desgiend to augment HTML and run *locally* on a web browser
+* dynamically typed -- var type provided at runtime(like python)
+* most development through web browser console
+* no built in I/O
+* ```console.log()``` displays a string in the console
+
+**DOM**:
+* tree rep of webpage
+* named components
+* JS derives most of its utility for being able to interact with HTML/XML documents
+* the DOM is an **API for interacting with HTML**.
+    * provides structure to interact with
+
+**JS commands for selecting HTML elements from the DOM**:
+* ```document.getElementById(<ID>)```
+* ```document.getElementsByTagName(<TAG>)``` (returns a list)
+* ```document.getElementsByClassName(<CLASS>)```
+
+**JS for user action awareness**:
+* .addEventListener(<EVENT>, <FUNCTION>)
+* you need an element of the DOM to tie the event listener to
+* SAMPLE CODE:
+```html
+// in html:
+<button id="b"> the button </button>
+```
+```js
+// in JS:
+var dasbut = document.getElementById("b");
+dasbut.addEventListener('click', fxnName);
+```
+
+
 -----
 
 # 12/18/18
