@@ -1,3 +1,10 @@
+/*
+Xiaojie(Aaron) Li, Ricky Lin, Team weWantJS
+Softdev1 pd6
+K28 -- Sequential Progression
+2018-12-18
+*/
+
 var studentList = ["ricky", "aaron", "kyle", "kaitlin", "tim", "bo", "damian", "michelle"];
 
 var fib = function(args) {
