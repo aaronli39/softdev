@@ -11,6 +11,37 @@ ___________________________________________________________
 ___________________________________________________________
 ```
 
+# 12/20/18
+**Aim**: DOMinate this
+
+**JS for manipulating HTML elements**:
+* ```document.createElement(<HTML TAG NAME>);```
+* ```Element.setAttribute(<NAME>, <VALUE>);```
+* ```ELEMENT.getAttribute(<NAME>);```
+* **Element** is most general class in DOM(akin to ```Object``` in Java)
+* ```Element.remove();```
+* ```Element.innerHTML;```
+* ```Element.appendChild(<ELEMENT>);```
+
+**New Events**:
+* ``` 'mouseover' ```
+* ``` 'mouseout' ```
+
+**e is for Event**
+* Event is interface implemented by all events
+* automatically passed to event handlers(eg ur fxns)
+* example:
+```js
+button.addEventListener("click", function(e) {
+    console.log(e);
+})
+
+// a qustion arises: what is 'e'? Does it have to be 'e'?
+```
+
+
+-----
+
 # 12/19/18
 
 **Aim**: JS 2: Electric Boogaloo
