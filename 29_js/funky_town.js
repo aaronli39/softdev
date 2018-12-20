@@ -1,12 +1,13 @@
 /*
-Xiaojie(Aaron) Li, Ricky Lin, Team weWantJS
+Xiaojie(Aaron) Li, Kaitlin Wan
 Softdev1 pd6
-K28 -- Sequential Progression
+K29 -- Sequential Progression II: Electric Boogaloo
 2018-12-18
 */
 
 var studentList = ["ricky", "aaron", "kyle", "kaitlin", "tim", "bo", "damian", "michelle"];
 
+// functions
 var fib = function(args) {
     if (args == 0) return 0;
     else if (args == 1) return 1;
@@ -29,19 +30,21 @@ var randStudent = function() {
     return studentList[rand];
 }
 
-var display1 = function() {
-    console.log(fib(10));
-}
-var display2 = function() {
-    console.log(gcd(30, 40));
-}
-var display3 = function() {
-    console.log(randStudent());
-}
+// event listeners occur on click
+var fibbo = document.getElementById("fib");
+fibbo.addEventListener('click', function() {
+    console.log("fib(10): " + fib(10));
+    document.getElementById("fibr").innerHTML = "fib(10): " + fib(10);
+});
 
-var fibbo = document.getElementsByClassName("fib");
-fibbo.addEventListener('click', display1);
-var gcdo = document.getElementsByClassName("gcd");
-gcdo.addEventListener('click', display2);
-var rando = document.getElementsByClassName("rand");
-rando.addEventListener('click', display3);
+var gcdo = document.getElementById("gcd");
+gcdo.addEventListener('click', function() {
+    console.log("gcd(30, 40): " + gcd(30, 40));
+    document.getElementById("gcdr").innerHTML = "gcd(30, 40): " + gcd(30, 40);
+});
+
+var rando = document.getElementById("rand");
+rando.addEventListener('click', function() {
+    console.log("randStudent(): " + randStudent());
+    document.getElementById("randr").innerHTML = "randStudent(): " + randStudent();
+});
