@@ -2,11 +2,11 @@
 
 var changeHeading = function(e) {
     var h = document.getElementById("h");
-    h.innerHTML = 
+    h.innerHTML = e.target.innerhtml;
 };
 
 var removeItem = function(e) {
-    ?
+    e.target.remove();
 };
 
 var lis = document.getElementsByTagName("li");
