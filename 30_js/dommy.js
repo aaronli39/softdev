@@ -55,19 +55,28 @@ var fib = function(n) {
 
 var counter = 1;
 var addFib = function(e) {
-    console.log(e);
+    // console.log(e);
     var list = document.getElementById("fiblist");
     var item = document.createElement("li");
+    item.setAttribute("class", "fibs");
     item.innerHTML = "" + fib(counter);
     counter += 1;
     list.appendChild(item);
 };
 
-// var addFib2 = function(e) {
-//     console.log(e);
-//     ??
-//     .. see QAF: re dynamic programming
-// };
+var fibList = document.getElementsByClassName("fibs");
+var addFib2 = function(e) {
+    var list = document.getElementById("fiblist");
+    var item = document.createElement("li");
+    item.setAttribute("class", "fibs");
+    item.innerHTML = "" + fib(counter);
+    counter += 1;
+    list.appendChild(item);
+    console.log(fibList.length);
+    console.log(fibList[fibList.length - 2]);
+    console.log(fibList[fibList.length - 1]);
+
+};
 
 var fb = document.getElementById("fb");
-fb.addEventListener("click", addFib);
+fb.addEventListener("click", addFib2);
