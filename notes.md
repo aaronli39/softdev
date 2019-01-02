@@ -11,6 +11,26 @@ ___________________________________________________________
 ___________________________________________________________
 ```
 
+# 01/02/19
+
+**Aim**: Envision. Dream. Thinking. Inspire.
+
+**DN**: Procure kts and write:
+* fave mobile app
+* fav desktop app
+* best hardware interface
+* best software inerface
+* best video game
+
+* [final project](goo.gl/hb7iy4)
+* [fill out list of ideas](goo.gl/C32gmZ)
+* [published version of ideas](goo.gl/TxdrdQ)
+* [individual submissions(cannot edit, but you can resubmit many times)](goo.gl/qi1u1u)
+
+* apps: **drops** app, **grasshopper** app(grasshopper.codes for info)
+
+-----
+
 # 12/20/18
 **Aim**: DOMinate this
 
@@ -38,7 +58,6 @@ button.addEventListener("click", function(e) {
 
 // a qustion arises: what is 'e'? Does it have to be 'e'?
 ```
-
 
 -----
 
