@@ -11,6 +11,12 @@ ___________________________________________________________
 ___________________________________________________________
 ```
 
+# 01/03/19
+
+**Aim**: Analyze, envision, merge, cull, promote, demote
+
+-----
+
 # 01/02/19
 
 **Aim**: Envision. Dream. Thinking. Inspire.
@@ -21,6 +27,7 @@ ___________________________________________________________
 * best hardware interface
 * best software inerface
 * best video game
+
 
 * [final project](goo.gl/hb7iy4)
 * [fill out list of ideas](goo.gl/C32gmZ)
